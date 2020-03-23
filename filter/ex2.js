@@ -25,7 +25,8 @@ Sortie attendue:
 
 function keepStarks(names) {
 names.map((name)=>{
-  if(name.endsWith('Stark')){return names}})
+  if(name.endsWith('Stark')){return name}})
+  return name
 }
 
 // Ne pas modifier l'export
