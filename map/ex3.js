@@ -86,7 +86,7 @@ else
 if (75<movie.rating){return movie.label='certified fresh'}})
 return movies
 }
-/*console.log(getMoviesFreshness(movies))*/
+
 
 // Ne pas modifier l'export
 module.exports = getMoviesFreshness;

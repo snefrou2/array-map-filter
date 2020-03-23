@@ -61,15 +61,10 @@ En sortie: [
 ];*/
 
 function getFoodCategories(foods) {
-  if (foods.isVegetarian === false){
-    return foods.food + " is not suitable for vegetarians"
-  }
-  else { return foods.food  + " is suitable for vegetarians"}
-  
+  foods.map( (food) => {
+  if (food.isVegetarian === false){return foods.food + " is not suitable for vegetarians"}
+  else { return foods.food  + " is suitable for vegetarians"}})
+  return foods
 }
-const categorie = miam.map(getFoodCategories);
-/*console.log(categorie)*/
-
-
 // Ne pas modifier l'export
 module.exports = getFoodCategories;
