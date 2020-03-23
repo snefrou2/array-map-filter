@@ -41,10 +41,33 @@ En sortie: [
 ]
 
  */
+const miam = [
+  {
+    food: 'Bacon',
+    isVegetarian: false
+  },
+  {
+    food: 'Sausage',
+    isVegetarian: false
+  },
+  {
+    food: 'Tofu',
+    isVegetarian: true
+  },
+  {
+    food: 'Chick Pea',
+    isVegetarian: true
+  }
+];
 
 function getFoodCategories(foods) {
+  if (foods.isVegetarian === false){
+    return foods.food + " is not suitable for vegetarians"
+  }
+  else { return foods.food  + " is suitable for vegetarians"}
 }
-
+const categorie = miam.map(getFoodCategories);
+console.log(categorie)
 
 
 // Ne pas modifier l'export
