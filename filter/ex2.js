@@ -22,12 +22,21 @@ Sortie attendue:
   ['Bran Stark', 'Arya Stark', 'Sansa Stark']
 
  */
+/*const got = [
+  'Bran Stark',
+  'Cersei Lannister',
+  'Sandor Clegane',
+  'Arya Stark',
+  'Yara Greyjoy',
+  'Sansa Stark'
+]*/
+
 
 function keepStarks(names) {
-names.map((name)=>{
-  if(name.endsWith('Stark')){return name}})
-  return name
-}
-
+  return names.filter ((names) => names.endsWith('Stark'))
+  }
+  //OK ne pas toucher
+  //console.log(keepStarks(got));
+ 
 // Ne pas modifier l'export
 module.exports = keepStarks;
