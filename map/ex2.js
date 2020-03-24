@@ -41,7 +41,7 @@ En sortie: [
 ]
 
  */
-const miam = [
+/*const miam = [
   {
     food: 'Bacon',
     isVegetarian: false
@@ -58,17 +58,14 @@ const miam = [
     food: 'Chick Pea',
     isVegetarian: true
   }
-];
+];*/
 
-function getStringsLength(strings) {
-  return strings.map((strings) => strings + " contains "+ strings.length + " characters")
-  }
 
 function getFoodCategories(foods) {
  return foods.map( (food) => {if (food.isVegetarian === false){return food.food + " is not suitable for vegetarians"}
  else { return food.food  + " is suitable for vegetarians"}})
 }
-console.log(getFoodCategories(miam))
+c//onsole.log(getFoodCategories(miam))
 
 // Ne pas modifier l'export
 module.exports = getFoodCategories;
