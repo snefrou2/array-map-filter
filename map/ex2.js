@@ -65,7 +65,7 @@ function getFoodCategories(foods) {
  return foods.map( (food) => {if (food.isVegetarian === false){return food.food + " is not suitable for vegetarians"}
  else { return food.food  + " is suitable for vegetarians"}})
 }
-c//onsole.log(getFoodCategories(miam))
-
+//console.log(getFoodCategories(miam))
+//OK ne pas modifier
 // Ne pas modifier l'export
 module.exports = getFoodCategories;
